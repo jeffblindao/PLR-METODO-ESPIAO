@@ -1,6 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+
+<div align="center" style=" color: #F4FF00; font-weight: bold; font-size: 20px; font-family: Arial; background-color: red; padding: 10px; margin: 0px;" id="data"></div>
+
+<script>
+
+   
+
+  
+
+  // Obtém a data/hora atual
+
+var data = new Date();
+
+
+
+// Guarda cada pedaço em uma variável
+
+var dia     = data.getDate();           // 1-31 
+
+var mes     = data.getMonth();          // 0-11 (zero=janeiro) 
+
+var ano4    = data.getFullYear();       // 4 dígitos 
+
+
+
+// Formata a data e a hora (note o mês + 1)
+
+var str_data = dia + '/' + (mes+1) + '/' + ano4; 
+
+
+
+// Mostra o resultado
+
+//alert('Só até hoje ' + str_data + ' às ' + str_hora);
+
+   
+
+ 
+
+  
+
+  document.getElementById("data").innerHTML = ('Apenas 19 vagas para encerrar os acessos a esse aplicativo ' + str_data);
+
+</script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
